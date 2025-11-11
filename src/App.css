@@ -1,0 +1,62 @@
+/* Background full center */
+.main-wrapper {
+  background: linear-gradient(135deg, #9f85b9, #8eb2ec);
+  padding: 20px;
+}
+
+/* Smooth fade & scale card animation */
+.todo-card {
+  width: 100%;
+  max-width: 420px;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  animation: fadeIn 0.7s ease-out;
+  transition: 0.4s ease;
+}
+
+/* .todo-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 6px 25px rgba(0, 0, 0, 0.2);
+} */
+
+/* Welcome text gradient */
+.user-welcome {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Email wrap */
+.user-email {
+  font-size: 13px;
+  word-break: break-all;
+}
+
+/* Neon Logout Button */
+.logout-btn {
+  background: linear-gradient(135deg, #ff4d4d, #ff1a1a);
+  border: none;
+  color: white !important;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+.logout-btn:hover {
+  opacity: 0.8;
+  transform: scale(1.05);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+/* Body global fix */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
